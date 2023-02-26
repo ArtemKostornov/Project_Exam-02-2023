@@ -11,6 +11,7 @@ string[] DoArr(string[] array, string[] arr)
         {
             arr[i] = array[i];
         }
+        else arr[i] = " ";
     }
     return arr;
 }
@@ -26,7 +27,10 @@ Console.Write("->");
 Console.Write("[");
 for (int i = 0; i < arr.Length; i++)
 {
-    Console.Write($"{arr[i]}" + ",");
+    if (arr[i] != " " )
+    {
+        Console.Write($"{arr[i]}" + ",");
+    }
 }
 
 Console.Write("]");
