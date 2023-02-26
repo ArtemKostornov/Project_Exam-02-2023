@@ -14,3 +14,4 @@ string[] DoArr(string[] array, string[] arr)
     }
     return arr;
 }
+arr = DoArr(array, arr);
