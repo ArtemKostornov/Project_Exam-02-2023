@@ -47,3 +47,4 @@ Console.Write("]");
 ```
 ----
 ## Программа выдаст:
+![Alt-текст](https://github.com/ArtemKostornov/Project_Exam-02-2023/blob/c4218b9138bb41a13a513e3ccfe6ffd282bedd7d/screenshot.png "скрин")
