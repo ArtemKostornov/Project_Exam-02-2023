@@ -1,22 +1,21 @@
 ﻿
+
 string[] array = { "1", "two", "3", "four", "five" };
-string[] arr = new string[5];
 
 
-string[] DoArr(string[] array, string[] arr)
+
+string[] DoArr(string[] array)
 {
     for (int i = 0; i < array.Length; i++)
     {
         if (array[i].Length <= 3)
         {
-            arr[i] = array[i];
+            array[i] = array[i];
         }
-        else arr[i] = " ";
+        else array[i] = " ";
     }
-    return arr;
+    return array;
 }
-arr = DoArr(array, arr);
-
 Console.Write("[");
 for (int i = 0; i < array.Length; i++)
 {
@@ -25,11 +24,17 @@ for (int i = 0; i < array.Length; i++)
 Console.Write("]");
 Console.Write("->");
 Console.Write("[");
-for (int i = 0; i < arr.Length; i++)
+
+
+
+array = DoArr(array);
+
+
+for (int i = 0; i < array.Length; i++)
 {
-    if (arr[i] != " " )
+    if (array[i] != " " )
     {
-        Console.Write($"{arr[i]}" + ",");
+        Console.Write($"{array[i]}" + ",");
     }
 }
 
