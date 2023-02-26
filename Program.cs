@@ -15,3 +15,18 @@ string[] DoArr(string[] array, string[] arr)
     return arr;
 }
 arr = DoArr(array, arr);
+
+Console.Write("[");
+for (int i = 0; i < array.Length; i++)
+{
+    Console.Write($"{array[i]}" + ",");
+}
+Console.Write("]");
+Console.Write("->");
+Console.Write("[");
+for (int i = 0; i < arr.Length; i++)
+{
+    Console.Write($"{arr[i]}" + ",");
+}
+
+Console.Write("]");
